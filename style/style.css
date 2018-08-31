@@ -1,0 +1,114 @@
+body {
+    text-decoration: none;
+    background-color: lightcyan;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h1 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h3 {
+    display: inline;
+    flex-direction: column;
+}
+
+.statHeaders {
+    font-family: "Arial Black", fantasy;
+}
+
+#Wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 10%;
+    border: 2px solid black;
+    width: 30%;
+    height: 50%;
+    padding: 1%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    font-family: "Arial Black", fantasy;
+    border-radius: 10%;
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+    text-align: center;
+}
+
+.IncDecr {
+    border-radius: 50%;
+    background-color: darkgreen;
+}
+
+#start {
+    background-color: dodgerblue;
+}
+
+#start:hover {
+    background-color: cornflowerblue;
+}
+
+#next {
+    background-color: chocolate;
+    flex-wrap: nowrap;
+}
+
+#next:hover {
+    background-color: coral;
+}
+
+#highlight {
+    background-color: grey;
+}
+
+#highlight:hover {
+    background-color: lightslategrey;
+
+}
+
+#gameBoard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: gray;
+    border-radius: 5%;
+    border: 2px solid black;
+    width: 65%;
+    height: 80%;
+    padding: 1%;
+}
+
+.piece {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: darkgray;
+    border-radius: 10%;
+    margin: 1%;
+    width: 10%;
+    height: 10%;
+    background-color: lightgray;
+}
+
+.piece:hover {
+    background-color: aquamarine !important;
+    border: 2px solid black;
+}
+
+.disable {
+    pointer-events: none;
+}

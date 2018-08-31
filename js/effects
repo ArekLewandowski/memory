@@ -1,0 +1,6 @@
+$(document).ready(function(){
+    alert("You entered p1!");
+    $("#buttons").mouseover(function(){
+        $("#gameBoard").fadeIn();
+    })
+});

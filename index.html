@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <title>Hello, memory!</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>Hello, memory!</h1>
+<div id="Wrapper">
+    <div id="buttons">
+        <button class="buttons" id="start" onclick="controller.resetGame()">START GAME</button>
+        <button class="buttons" id="next" onclick="controller.nextLevel()">GO TO NEXT LEVEL</button>
+        <button class="buttons" id="highlight" onclick="controller.startGame()">RESTART LEVEL</button>
+        <div id="stats">
+            <h3 class="statHeaders">Level: </h3>
+            <span id="level"></span></br>
+            <h3 class="statHeaders">Pieces to guess: </h3>
+            <span id="piecesToGuess"></span></br>
+            <button class="IncDecr" id="IncTime" onclick="controller.incrementTime()">INC</button>
+            <button class="IncDecr" id="DecTime" onclick="controller.decrementTime()">DEC</button>
+            <h3 class="statHeaders">Time: </h3>
+            <span id="time"></span></br>
+            <button class="IncDecr" id="IncMiss" onclick="controller.incrementAvailableMisses()">INC</button>
+            <button class="IncDecr" id="DecMiss" onclick="controller.decrementAvailableMisses()">DEC</button>
+            <h3 class="statHeaders">Missed/Misses allowed: </h3>
+            <span id="missed"></span></br>
+            <h3 class="statHeaders">Accuracy percentage: </h3>
+            <span id="accuracy"></span>
+        </div>
+    </div>
+
+    <article id="gameBoard">
+
+    </article>
+
+</div>
+
+<!-- Optional JavaScript -->
+<script src="js/effects.js"></script>
+<script src="js/game.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/view.js"></script>
+
+</body>
+</html>
