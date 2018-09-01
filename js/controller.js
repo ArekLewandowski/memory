@@ -16,6 +16,7 @@ var controller = function () {
 
         nextLevel = function () {
             game.nextLevel();
+            startGame();
         },
 
         renderPieces = function () {
@@ -38,7 +39,8 @@ var controller = function () {
                         startGame();
                     }, 500);
                 } else {
-                    alert("Your accuracy: "+ game.getAccuracyPercentage()+"%");
+                    alert("Your accuracy: "+ game.getAccuracyPercentage()+"% with : " +
+                        game.getAllowedMisses() + " allowed misses");
                     setTimeout(function () {
                         resetGame();
                     }, 2000);

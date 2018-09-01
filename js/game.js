@@ -105,10 +105,13 @@ var game = (function () {
             return true;
         },
         nextLevel = function () {
-            currentGameLevel++;
-            selectedNumberOfPieces += 1;
-            currentNumberOfPieces += 2;
-            return true;
+            if (currentGameLevel < 48) {
+                currentGameLevel++;
+                selectedNumberOfPieces += 1;
+                currentNumberOfPieces += 2;
+                return true;
+            }
+            alert("This is last level.")
         },
 
         incrementAvailableMisses = function () {
