@@ -183,15 +183,15 @@ describe('Game', function () {
 
     it('should reset game from begin with Mock', function () {
 
-        SpyOn(game, 'startGame');
-        SpyOn(view, 'clearWindow');
-        SpyOn(view, 'renderPieces');
-        SpyOn(game.getPieces().and.returnValue(2));
-        SpyOn(view, 'renderPieces');
+        spyOn(game, 'startGame');
+        spyOn(view, 'clearWindow');
+        spyOn(view, 'renderPieces');
+        spyOn(game, 'getPieces').and.returnValue(2);
         controller.startGame();
 
 
-        expect(game.startGame).toHaveBeenCalledWith(2);
+        expect(game.startGame).toHaveBeenCalled();
+        expect(game.startGame).toHaveBeenCalled();
     });
 
 });
