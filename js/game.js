@@ -23,6 +23,7 @@ var game = (function () {
                 currentNumberOfPieces = initialNumberOfPieces;
             }
             pieces = initializeGame();
+            return pieces;
         },
 
         initializeGame = function () {
